@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="第 1 页" id="k0eH_YFBojKJjFSzXWmz">
+    <mxGraphModel dx="1190" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inAwacBmnLZ96-YNuJjm-1" value="&lt;b&gt;前端&lt;/b&gt;&lt;div&gt;&lt;b&gt;（浏览器）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- 语音采集播放模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Websocket通信模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- WebRTC通信模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- 页面展示模块&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="240" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-4" value="&lt;b&gt;golang后端&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Websocket通信模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- LLM调用与管理模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- pinecone调用模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- 用户登录注册模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- 会话管理模块&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="542.5" y="240" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-5" value="SQLite数据库" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="607.5" y="450" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-7" value="&lt;b&gt;Rustpbx&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Vad打断模块&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- WebRTC通信模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- ASR服务调用模块&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- TTS服务调用模块&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="460" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-8" value="AI大模型" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="70" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-10" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="inAwacBmnLZ96-YNuJjm-1" target="inAwacBmnLZ96-YNuJjm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="360" as="sourcePoint" />
+            <mxPoint x="320" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-11" value="WebSocket长连接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="inAwacBmnLZ96-YNuJjm-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.0133" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-15" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="inAwacBmnLZ96-YNuJjm-5" target="inAwacBmnLZ96-YNuJjm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="450" as="sourcePoint" />
+            <mxPoint x="510" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inAwacBmnLZ96-YNuJjm-16" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.118;exitY=-0.028;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="inAwacBmnLZ96-YNuJjm-4" target="inAwacBmnLZ96-YNuJjm-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="239" as="sourcePoint" />
+            <mxPoint x="510" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-2" value="pinecone&lt;div&gt;向量数据库&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="672.5" y="30" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.81;exitY=0.006;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="inAwacBmnLZ96-YNuJjm-4" target="LwpRrlDq9SZaHG6c2AbZ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="220" as="sourcePoint" />
+            <mxPoint x="760" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="inAwacBmnLZ96-YNuJjm-7" target="inAwacBmnLZ96-YNuJjm-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="440" as="sourcePoint" />
+            <mxPoint x="160" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-7" value="WebRTC长连接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwpRrlDq9SZaHG6c2AbZ-6">
+          <mxGeometry x="0.1" relative="1" as="geometry">
+            <mxPoint y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="inAwacBmnLZ96-YNuJjm-7" target="inAwacBmnLZ96-YNuJjm-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="500" as="sourcePoint" />
+            <mxPoint x="260" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwpRrlDq9SZaHG6c2AbZ-9" value="WebSocket长连接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwpRrlDq9SZaHG6c2AbZ-8">
+          <mxGeometry x="-0.0041" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
